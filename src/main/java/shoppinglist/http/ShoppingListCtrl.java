@@ -96,9 +96,9 @@ public class ShoppingListCtrl {
         }
 
         if(service.create(entity, arrDetilBelanja))
-            return  ResponseEntity.ok("Data tersimpan dengan ID: " + entity.getId());
+            return  ResponseEntity.ok("Data diupdate dengan ID: " + entity.getId());
         else
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Data gagal tersimpan");
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Data gagal diupdate");
     }
 
     // Menghapus objek DaftarBelanja berdasarkan ID yg diberikan
